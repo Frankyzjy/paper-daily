@@ -1,7 +1,7 @@
 {
-  "generated_at": "Sat, 30 May 2026 05:34:44 +0000",
-  "generated_at_iso": "2026-05-30T05:34:44.334184+00:00",
-  "config_source": "file",
+  "generated_at": "Sat, 30 May 2026 05:36:39 +0000",
+  "generated_at_iso": "2026-05-30T05:36:39.370690+00:00",
+  "config_source": "issue",
   "topics": [
     {
       "id": "llm_low_precision_quantization",
@@ -462,7 +462,7 @@
       },
       "first_seen_at": "2026-05-30T05:34:44.334184+00:00",
       "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "dblp:conf/hpca/ShiZWCSFWG26",
@@ -836,7 +836,7 @@
       },
       "first_seen_at": "2026-05-30T05:34:44.334184+00:00",
       "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "dblp:conf/isca/HanC025",
@@ -926,7 +926,7 @@
       },
       "first_seen_at": "2026-05-30T05:34:44.334184+00:00",
       "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "dblp:conf/isca/MoWW0CMJCX0025",
@@ -1024,7 +1024,7 @@
       },
       "first_seen_at": "2026-05-30T05:34:44.334184+00:00",
       "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "dblp:conf/isca/NamGT25",
@@ -1114,7 +1114,7 @@
       },
       "first_seen_at": "2026-05-30T05:34:44.334184+00:00",
       "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "dblp:conf/hpca/KimCKOY26",
@@ -2306,7 +2306,7 @@
       },
       "first_seen_at": "2026-05-30T05:34:44.334184+00:00",
       "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "dblp:conf/isca/MoonCP025",
@@ -2393,7 +2393,7 @@
       },
       "first_seen_at": "2026-05-30T05:34:44.334184+00:00",
       "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "dblp:conf/hpca/MajhiLMK26",
@@ -3162,7 +3162,7 @@
       },
       "first_seen_at": "2026-05-30T05:34:44.334184+00:00",
       "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "dblp:conf/hpca/TruongSXSGFBCG26",
@@ -7253,7 +7253,7 @@
       },
       "first_seen_at": "2026-05-30T05:34:44.334184+00:00",
       "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "dblp:conf/isca/FengHZLY025",
@@ -7342,7 +7342,7 @@
       },
       "first_seen_at": "2026-05-30T05:34:44.334184+00:00",
       "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "dblp:conf/isca/LeeLBCJKKLIHKLR25",
@@ -7438,7 +7438,7 @@
       },
       "first_seen_at": "2026-05-30T05:34:44.334184+00:00",
       "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "dblp:conf/isca/NohSCLKK25",
@@ -7527,7 +7527,7 @@
       },
       "first_seen_at": "2026-05-30T05:34:44.334184+00:00",
       "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "dblp:conf/isca/SongBXKRK25",
@@ -7616,7 +7616,7 @@
       },
       "first_seen_at": "2026-05-30T05:34:44.334184+00:00",
       "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "dblp:conf/isca/XuPZCLLWD25",
@@ -7707,7 +7707,7 @@
       },
       "first_seen_at": "2026-05-30T05:34:44.334184+00:00",
       "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "dblp:conf/nsdi/ZhaoMWWYPK26",
@@ -7826,7 +7826,8 @@
           "score": 0.062,
           "level": "low",
           "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
-          "keyword_hits": []
+          "keyword_hits": [],
+          "llm_reason": "论文方向为统计因果推断，与我的研究方向（大模型推理集群通信优化）无直接关联，匹配度低。"
         },
         {
           "topic_id": "llm_low_precision_quantization",
@@ -7859,18 +7860,19 @@
         "score": 0.062,
         "level": "low",
         "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
-        "keyword_hits": []
+        "keyword_hits": [],
+        "llm_reason": "论文方向为统计因果推断，与我的研究方向（大模型推理集群通信优化）无直接关联，匹配度低。"
       },
       "chinese_summary": {
-        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
-        "method": "请打开论文链接查看方法细节。",
-        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
-        "evidence": "来源摘要可在论文原文中核验。",
-        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
-        "why_relevant": "文本语义与方向描述存在弱相关，需要人工复核。"
+        "problem": "论文研究集群随机试验中的因果推断问题，目标是在没有渐近近似的情况下提供模型稳健的推断方法。",
+        "method": "提出保形因果推断框架，结合随机试验的群随机结构，进行有限样本下的有效推断。",
+        "innovation": "首次将保形推断应用于集群随机试验的因果效应估计；无需渐近近似即可获得模型稳健的置信区间；能够处理复杂的群间相关性和异质性。",
+        "evidence": "证据不足，摘要未提供具体实验或理论验证。",
+        "limitations": "全文可能对集群规模、处理分配机制等有额外假设；实际性能需要更多实证评估。",
+        "why_relevant": "论文方向为统计因果推断，与我的研究方向（大模型推理集群通信优化）无直接关联，匹配度低。"
       },
       "first_seen_at": "2026-05-30T04:11:41.833362+00:00",
-      "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
+      "last_seen_at": "2026-05-30T05:36:39.370690+00:00",
       "retained_from_previous_run": false
     },
     {
@@ -7894,7 +7896,8 @@
           "score": 0.062,
           "level": "low",
           "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
-          "keyword_hits": []
+          "keyword_hits": [],
+          "llm_reason": "论文聚焦网络安全防御架构，未涉及GPU/NPU/TPU张量计算单元、矩阵乘加阵列、数据流架构或低精度张量核等硬件技术，与研究方向几乎无关。摘要中提及的联邦学习、图神经网络等仅停留在应用层面，无任何硬件加速或算子映射描述。"
         },
         {
           "topic_id": "llm_low_precision_quantization",
@@ -7927,18 +7930,19 @@
         "score": 0.062,
         "level": "low",
         "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
-        "keyword_hits": []
+        "keyword_hits": [],
+        "llm_reason": "论文聚焦网络安全防御架构，未涉及GPU/NPU/TPU张量计算单元、矩阵乘加阵列、数据流架构或低精度张量核等硬件技术，与研究方向几乎无关。摘要中提及的联邦学习、图神经网络等仅停留在应用层面，无任何硬件加速或算子映射描述。"
       },
       "chinese_summary": {
-        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
-        "method": "Modern enterprise networks operate under persistent threats that exploit cloud-native misconfigurations, identity sprawl, and API vulnerabilities at machine speed.",
-        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
-        "evidence": "来源摘要可在论文原文中核验。",
-        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
-        "why_relevant": "文本语义与方向描述存在弱相关，需要人工复核。"
+        "problem": "现有安全运营中心架构反应式、依赖签名，无法预测多阶段横向移动，难以应对云原生错误配置、身份蔓延和API漏洞等机器速度的威胁。",
+        "method": "提出认知网络防御数字孪生（CCDT），集成联邦学习、基于图神经网络的攻击路径预测、对抗加固检测模型和自主安全编排、自动化与响应系统。",
+        "innovation": "构建持续同步的组织资产数字副本，利用强化学习红队代理压力测试检测模型；建立联邦智能网格实现跨组织隐私保护梯度共享；集成基于SHAP值的可解释AI模块，支持审计合规报告。",
+        "evidence": "在CICIDS-2018和LANL数据集上实验显示，攻击路径检测速度提升52%，假阳性率降低41%，平均响应时间减少60%。",
+        "limitations": "摘要未涉及张量计算单元或AI加速器架构；联邦学习和GNN的实现细节未知；实际部署在混合云环境中的性能需全文验证。",
+        "why_relevant": "论文聚焦网络安全防御架构，未涉及GPU/NPU/TPU张量计算单元、矩阵乘加阵列、数据流架构或低精度张量核等硬件技术，与研究方向几乎无关。摘要中提及的联邦学习、图神经网络等仅停留在应用层面，无任何硬件加速或算子映射描述。"
       },
       "first_seen_at": "2026-05-30T04:11:41.833362+00:00",
-      "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
+      "last_seen_at": "2026-05-30T05:36:39.370690+00:00",
       "retained_from_previous_run": false
     },
     {
@@ -16779,7 +16783,7 @@
       },
       "first_seen_at": "2026-05-30T05:34:44.334184+00:00",
       "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "dblp:conf/isca/0003WTDH0025",
@@ -16869,7 +16873,7 @@
       },
       "first_seen_at": "2026-05-30T05:34:44.334184+00:00",
       "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "dblp:conf/isca/ByeonKKHKNKH25",
@@ -16960,7 +16964,7 @@
       },
       "first_seen_at": "2026-05-30T05:34:44.334184+00:00",
       "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "dblp:conf/isca/CaoWCA025",
@@ -17048,7 +17052,7 @@
       },
       "first_seen_at": "2026-05-30T05:34:44.334184+00:00",
       "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "dblp:conf/isca/CoburnTAACDDDFG25",
@@ -17190,7 +17194,7 @@
       },
       "first_seen_at": "2026-05-30T05:34:44.334184+00:00",
       "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "dblp:conf/isca/FengF0XX0Z25",
@@ -17280,7 +17284,7 @@
       },
       "first_seen_at": "2026-05-30T05:34:44.334184+00:00",
       "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "dblp:conf/isca/HaoLW0025",
@@ -17368,7 +17372,7 @@
       },
       "first_seen_at": "2026-05-30T05:34:44.334184+00:00",
       "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "dblp:conf/isca/HassanMJSC25",
@@ -17456,7 +17460,7 @@
       },
       "first_seen_at": "2026-05-30T05:34:44.334184+00:00",
       "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "dblp:conf/isca/HuangH0Y0M00L0G25",
@@ -17550,7 +17554,7 @@
       },
       "first_seen_at": "2026-05-30T05:34:44.334184+00:00",
       "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "dblp:conf/isca/HuangLQ0K0025",
@@ -17640,7 +17644,7 @@
       },
       "first_seen_at": "2026-05-30T05:34:44.334184+00:00",
       "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "dblp:conf/isca/KimHHKK25",
@@ -17728,7 +17732,7 @@
       },
       "first_seen_at": "2026-05-30T05:34:44.334184+00:00",
       "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "dblp:conf/isca/KimSYIMDT25",
@@ -17818,7 +17822,7 @@
       },
       "first_seen_at": "2026-05-30T05:34:44.334184+00:00",
       "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "dblp:conf/isca/Kwon0KJKR25",
@@ -17907,7 +17911,7 @@
       },
       "first_seen_at": "2026-05-30T05:34:44.334184+00:00",
       "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "dblp:conf/isca/LeeKOCK025",
@@ -17996,7 +18000,7 @@
       },
       "first_seen_at": "2026-05-30T05:34:44.334184+00:00",
       "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "dblp:conf/isca/LiBWMVGJBJ025",
@@ -18089,7 +18093,7 @@
       },
       "first_seen_at": "2026-05-30T05:34:44.334184+00:00",
       "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "dblp:conf/isca/LiJTZ025",
@@ -18177,7 +18181,7 @@
       },
       "first_seen_at": "2026-05-30T05:34:44.334184+00:00",
       "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "dblp:conf/isca/LiYWZGNWS0Z025",
@@ -18271,7 +18275,7 @@
       },
       "first_seen_at": "2026-05-30T05:34:44.334184+00:00",
       "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "dblp:conf/isca/LinFCJ25",
@@ -18358,7 +18362,7 @@
       },
       "first_seen_at": "2026-05-30T05:34:44.334184+00:00",
       "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "dblp:conf/isca/LiuLC0ZXL025",
@@ -18449,7 +18453,7 @@
       },
       "first_seen_at": "2026-05-30T05:34:44.334184+00:00",
       "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "dblp:conf/isca/LiuZPYJR25",
@@ -18538,7 +18542,7 @@
       },
       "first_seen_at": "2026-05-30T05:34:44.334184+00:00",
       "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "dblp:conf/isca/MiliadisTKP25",
@@ -18625,7 +18629,7 @@
       },
       "first_seen_at": "2026-05-30T05:34:44.334184+00:00",
       "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "dblp:conf/isca/MostofiGHTTGJ25",
@@ -18715,7 +18719,7 @@
       },
       "first_seen_at": "2026-05-30T05:34:44.334184+00:00",
       "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "dblp:conf/isca/QinCCH25",
@@ -18802,7 +18806,7 @@
       },
       "first_seen_at": "2026-05-30T05:34:44.334184+00:00",
       "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "dblp:conf/isca/ShinKS25",
@@ -18888,7 +18892,7 @@
       },
       "first_seen_at": "2026-05-30T05:34:44.334184+00:00",
       "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "dblp:conf/isca/TaoL0CSZLZY25",
@@ -18980,7 +18984,7 @@
       },
       "first_seen_at": "2026-05-30T05:34:44.334184+00:00",
       "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "dblp:conf/isca/WuSLH0HG25",
@@ -19070,7 +19074,7 @@
       },
       "first_seen_at": "2026-05-30T05:34:44.334184+00:00",
       "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "dblp:conf/isca/Yang0L25",
@@ -19156,7 +19160,7 @@
       },
       "first_seen_at": "2026-05-30T05:34:44.334184+00:00",
       "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "dblp:conf/isca/YuJDLLYH25",
@@ -19246,7 +19250,7 @@
       },
       "first_seen_at": "2026-05-30T05:34:44.334184+00:00",
       "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "dblp:conf/isca/ZhaoDRDGLZHZMLH25",
@@ -19344,7 +19348,7 @@
       },
       "first_seen_at": "2026-05-30T05:34:44.334184+00:00",
       "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "crossref:10.5705/ss.202025.0036",
@@ -19412,7 +19416,7 @@
         "why_relevant": "文本语义与方向描述存在弱相关，需要人工复核。"
       },
       "first_seen_at": "2026-05-30T04:11:41.833362+00:00",
-      "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
+      "last_seen_at": "2026-05-30T05:36:39.370690+00:00",
       "retained_from_previous_run": false
     },
     {
@@ -19482,7 +19486,7 @@
         "why_relevant": "文本语义与方向描述存在弱相关，需要人工复核。"
       },
       "first_seen_at": "2026-05-30T04:11:41.833362+00:00",
-      "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
+      "last_seen_at": "2026-05-30T05:36:39.370690+00:00",
       "retained_from_previous_run": false
     },
     {
@@ -19553,8 +19557,8 @@
         "why_relevant": "文本语义与方向描述存在弱相关，需要人工复核。"
       },
       "first_seen_at": "2026-05-30T04:11:41.833362+00:00",
-      "last_seen_at": "2026-05-30T04:11:41.833362+00:00",
-      "retained_from_previous_run": true
+      "last_seen_at": "2026-05-30T05:36:39.370690+00:00",
+      "retained_from_previous_run": false
     },
     {
       "id": "crossref:10.5705/ss.202025.0187",
@@ -19625,8 +19629,8 @@
         "why_relevant": "文本语义与方向描述存在弱相关，需要人工复核。"
       },
       "first_seen_at": "2026-05-30T04:11:41.833362+00:00",
-      "last_seen_at": "2026-05-30T04:11:41.833362+00:00",
-      "retained_from_previous_run": true
+      "last_seen_at": "2026-05-30T05:36:39.370690+00:00",
+      "retained_from_previous_run": false
     },
     {
       "id": "crossref:10.5705/ss.202025.0083",
@@ -19696,8 +19700,8 @@
         "why_relevant": "文本语义与方向描述存在弱相关，需要人工复核。"
       },
       "first_seen_at": "2026-05-30T04:11:41.833362+00:00",
-      "last_seen_at": "2026-05-30T04:11:41.833362+00:00",
-      "retained_from_previous_run": true
+      "last_seen_at": "2026-05-30T05:36:39.370690+00:00",
+      "retained_from_previous_run": false
     },
     {
       "id": "crossref:10.5705/ss.202025.0211",
@@ -19766,8 +19770,8 @@
         "why_relevant": "文本语义与方向描述存在弱相关，需要人工复核。"
       },
       "first_seen_at": "2026-05-30T04:11:41.833362+00:00",
-      "last_seen_at": "2026-05-30T04:11:41.833362+00:00",
-      "retained_from_previous_run": true
+      "last_seen_at": "2026-05-30T05:36:39.370690+00:00",
+      "retained_from_previous_run": false
     },
     {
       "id": "crossref:10.5705/ss.202025.0236",
@@ -19835,8 +19839,8 @@
         "why_relevant": "文本语义与方向描述存在弱相关，需要人工复核。"
       },
       "first_seen_at": "2026-05-30T04:11:41.833362+00:00",
-      "last_seen_at": "2026-05-30T04:11:41.833362+00:00",
-      "retained_from_previous_run": true
+      "last_seen_at": "2026-05-30T05:36:39.370690+00:00",
+      "retained_from_previous_run": false
     },
     {
       "id": "crossref:10.5705/ss.202025.0076",
@@ -19906,8 +19910,8 @@
         "why_relevant": "文本语义与方向描述存在弱相关，需要人工复核。"
       },
       "first_seen_at": "2026-05-30T04:11:41.833362+00:00",
-      "last_seen_at": "2026-05-30T04:11:41.833362+00:00",
-      "retained_from_previous_run": true
+      "last_seen_at": "2026-05-30T05:36:39.370690+00:00",
+      "retained_from_previous_run": false
     },
     {
       "id": "dblp:conf/hpca/KimJMSPJKL26",
@@ -38653,7 +38657,7 @@
       },
       "first_seen_at": "2026-05-30T05:34:44.334184+00:00",
       "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "dblp:conf/isca/0001VABS25",
@@ -38741,7 +38745,7 @@
       },
       "first_seen_at": "2026-05-30T05:34:44.334184+00:00",
       "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "dblp:conf/isca/00020CH25",
@@ -38828,7 +38832,7 @@
       },
       "first_seen_at": "2026-05-30T05:34:44.334184+00:00",
       "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "dblp:conf/isca/0003NCP025",
@@ -38916,7 +38920,7 @@
       },
       "first_seen_at": "2026-05-30T05:34:44.334184+00:00",
       "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "dblp:conf/isca/0005LGCLB0ZLZ25",
@@ -39009,7 +39013,7 @@
       },
       "first_seen_at": "2026-05-30T05:34:44.334184+00:00",
       "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "dblp:conf/isca/0006SYWHSW0LDZG25",
@@ -39109,7 +39113,7 @@
       },
       "first_seen_at": "2026-05-30T05:34:44.334184+00:00",
       "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "dblp:conf/isca/0007YYZLLWCRWJS25",
@@ -39205,7 +39209,7 @@
       },
       "first_seen_at": "2026-05-30T05:34:44.334184+00:00",
       "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "dblp:conf/isca/BeckerSA025",
@@ -39292,7 +39296,7 @@
       },
       "first_seen_at": "2026-05-30T05:34:44.334184+00:00",
       "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "dblp:conf/isca/ChaLLHKK25",
@@ -39381,7 +39385,7 @@
       },
       "first_seen_at": "2026-05-30T05:34:44.334184+00:00",
       "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "dblp:conf/isca/ChenNFM0M0SM25",
@@ -39473,7 +39477,7 @@
       },
       "first_seen_at": "2026-05-30T05:34:44.334184+00:00",
       "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "dblp:conf/isca/ChuXYWPTHHOWG0K25",
@@ -39577,7 +39581,7 @@
       },
       "first_seen_at": "2026-05-30T05:34:44.334184+00:00",
       "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "dblp:conf/isca/DongWL25",
@@ -39663,7 +39667,7 @@
       },
       "first_seen_at": "2026-05-30T05:34:44.334184+00:00",
       "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "dblp:conf/isca/FanCLWL25",
@@ -39751,7 +39755,7 @@
       },
       "first_seen_at": "2026-05-30T05:34:44.334184+00:00",
       "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "dblp:conf/isca/FanDKSFM0Z25",
@@ -39842,7 +39846,7 @@
       },
       "first_seen_at": "2026-05-30T05:34:44.334184+00:00",
       "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "dblp:conf/isca/Fang0GJ25",
@@ -39929,7 +39933,7 @@
       },
       "first_seen_at": "2026-05-30T05:34:44.334184+00:00",
       "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "dblp:conf/isca/FatimaYSAJ25",
@@ -40017,7 +40021,7 @@
       },
       "first_seen_at": "2026-05-30T05:34:44.334184+00:00",
       "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "dblp:conf/isca/Fu0YNLR25",
@@ -40106,7 +40110,7 @@
       },
       "first_seen_at": "2026-05-30T05:34:44.334184+00:00",
       "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "dblp:conf/isca/HouTMDM0T25",
@@ -40196,7 +40200,7 @@
       },
       "first_seen_at": "2026-05-30T05:34:44.334184+00:00",
       "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "dblp:conf/isca/HuangYY25",
@@ -40282,7 +40286,7 @@
       },
       "first_seen_at": "2026-05-30T05:34:44.334184+00:00",
       "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "dblp:conf/isca/JangJSLK25",
@@ -40370,7 +40374,7 @@
       },
       "first_seen_at": "2026-05-30T05:34:44.334184+00:00",
       "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "dblp:conf/isca/JiangSGAYD25",
@@ -40459,7 +40463,7 @@
       },
       "first_seen_at": "2026-05-30T05:34:44.334184+00:00",
       "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "dblp:conf/isca/KhademKZPGDTFMS25",
@@ -40553,7 +40557,7 @@
       },
       "first_seen_at": "2026-05-30T05:34:44.334184+00:00",
       "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "dblp:conf/isca/LiZGFLRX25",
@@ -40643,7 +40647,7 @@
       },
       "first_seen_at": "2026-05-30T05:34:44.334184+00:00",
       "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "dblp:conf/isca/LiuKXYZ025",
@@ -40732,7 +40736,7 @@
       },
       "first_seen_at": "2026-05-30T05:34:44.334184+00:00",
       "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "dblp:conf/isca/LiuY0C25",
@@ -40819,7 +40823,7 @@
       },
       "first_seen_at": "2026-05-30T05:34:44.334184+00:00",
       "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "dblp:conf/isca/NingW25",
@@ -40904,7 +40908,7 @@
       },
       "first_seen_at": "2026-05-30T05:34:44.334184+00:00",
       "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "dblp:conf/isca/ParkL0YPSJK25",
@@ -40995,7 +40999,7 @@
       },
       "first_seen_at": "2026-05-30T05:34:44.334184+00:00",
       "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "dblp:conf/isca/PengWYCWLWXLZZ25",
@@ -41089,7 +41093,7 @@
       },
       "first_seen_at": "2026-05-30T05:34:44.334184+00:00",
       "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "dblp:conf/isca/Ramachandran0K25",
@@ -41175,7 +41179,7 @@
       },
       "first_seen_at": "2026-05-30T05:34:44.334184+00:00",
       "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "dblp:conf/isca/RashidiWSGK25",
@@ -41263,7 +41267,7 @@
       },
       "first_seen_at": "2026-05-30T05:34:44.334184+00:00",
       "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "dblp:conf/isca/StojkovicL0T25",
@@ -41350,7 +41354,7 @@
       },
       "first_seen_at": "2026-05-30T05:34:44.334184+00:00",
       "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "dblp:conf/isca/TanejaQ25",
@@ -41435,7 +41439,7 @@
       },
       "first_seen_at": "2026-05-30T05:34:44.334184+00:00",
       "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "dblp:conf/isca/Ting0ZSZ25",
@@ -41523,7 +41527,7 @@
       },
       "first_seen_at": "2026-05-30T05:34:44.334184+00:00",
       "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "dblp:conf/isca/VittalQ0Q25",
@@ -41610,7 +41614,7 @@
       },
       "first_seen_at": "2026-05-30T05:34:44.334184+00:00",
       "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "dblp:conf/isca/WangLCSZ25",
@@ -41698,7 +41702,7 @@
       },
       "first_seen_at": "2026-05-30T05:34:44.334184+00:00",
       "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "dblp:conf/isca/WildgrubeETMBBC25",
@@ -41788,7 +41792,7 @@
       },
       "first_seen_at": "2026-05-30T05:34:44.334184+00:00",
       "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "dblp:conf/isca/XuKLLHDLWHY25",
@@ -41881,7 +41885,7 @@
       },
       "first_seen_at": "2026-05-30T05:34:44.334184+00:00",
       "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "dblp:conf/isca/XuYI025",
@@ -41968,7 +41972,7 @@
       },
       "first_seen_at": "2026-05-30T05:34:44.334184+00:00",
       "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "dblp:conf/isca/YangWGLSDWLWZYH25",
@@ -42063,7 +42067,7 @@
       },
       "first_seen_at": "2026-05-30T05:34:44.334184+00:00",
       "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "dblp:conf/isca/YiDWZLX25",
@@ -42152,7 +42156,7 @@
       },
       "first_seen_at": "2026-05-30T05:34:44.334184+00:00",
       "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "dblp:conf/isca/YuOK25",
@@ -42238,7 +42242,7 @@
       },
       "first_seen_at": "2026-05-30T05:34:44.334184+00:00",
       "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "dblp:conf/isca/YukselSOCLBSYM25",
@@ -42330,7 +42334,7 @@
       },
       "first_seen_at": "2026-05-30T05:34:44.334184+00:00",
       "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "dblp:conf/isca/ZhangHCYLZWZSGW25",
@@ -42426,7 +42430,7 @@
       },
       "first_seen_at": "2026-05-30T05:34:44.334184+00:00",
       "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "dblp:conf/isca/ZhangHXZXLY025",
@@ -42517,7 +42521,7 @@
       },
       "first_seen_at": "2026-05-30T05:34:44.334184+00:00",
       "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "dblp:conf/isca/ZhangXHYSZKN025",
@@ -42609,7 +42613,7 @@
       },
       "first_seen_at": "2026-05-30T05:34:44.334184+00:00",
       "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "dblp:conf/isca/ZhangZ025",
@@ -42695,7 +42699,7 @@
       },
       "first_seen_at": "2026-05-30T05:34:44.334184+00:00",
       "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "dblp:conf/isca/ZhouDZBCKWL25",
@@ -42786,7 +42790,7 @@
       },
       "first_seen_at": "2026-05-30T05:34:44.334184+00:00",
       "last_seen_at": "2026-05-30T05:34:44.334184+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "dblp:conf/micro/GerogiannisMBZT25",
@@ -72285,11 +72289,11 @@
   ],
   "stats": {
     "paper_count": 800,
-    "new_paper_count": 110,
+    "new_paper_count": 99,
     "days": 1,
-    "collection_mode": "incremental",
-    "collection_cutoff_iso": "2026-05-30T05:29:33.708018+00:00",
-    "max_per_topic": 5,
+    "collection_mode": "lookback",
+    "collection_cutoff_iso": "2026-05-29T05:36:39.370690+00:00",
+    "max_per_topic": 25,
     "sources": [
       {
         "type": "arxiv",
@@ -72511,7 +72515,7 @@
         "type": "conference",
         "successful_fetches": 1,
         "failed_fetches": 0,
-        "skipped_cached_years": 0
+        "skipped_cached_years": 1
       },
       "MICRO": {
         "type": "conference",
@@ -72580,26 +72584,26 @@
         "skipped_cached_years": 2
       }
     },
-    "llm_enabled": false,
+    "llm_enabled": true,
     "llm_concurrency": 2,
     "recent_history_days": 45,
     "successful_fetches": 19,
     "failed_fetches": 4,
     "successful_conference_fetches": 7,
     "failed_conference_fetches": 0,
-    "skipped_cached_conference_years": 16,
+    "skipped_cached_conference_years": 17,
     "conference_source_count": 12,
-    "retained_paper_count": 780,
+    "retained_paper_count": 790,
     "retained_recent_low_count": 799,
     "dropped_low_relevance_count": 0,
     "max_stored_papers": 800,
     "max_data_bytes": 8388608,
-    "data_bytes": 2849474,
-    "storage_trimmed_count": 90,
+    "data_bytes": 2851444,
+    "storage_trimmed_count": 89,
     "storage_trimmed_by_level": {
       "high": 0,
       "medium": 0,
-      "low": 90,
+      "low": 89,
       "unknown": 0
     }
   }
