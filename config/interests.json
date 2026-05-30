@@ -1,9 +1,6 @@
 {
   "sources": [
-    { "type": "arxiv", "name": "arXiv" },
-    { "type": "openalex", "name": "OpenAlex" },
-    { "type": "crossref", "name": "Crossref" },
-    { "type": "semantic_scholar", "name": "Semantic Scholar" }
+    { "type": "arxiv", "name": "arXiv" }
   ],
   "conference_sources": {
     "enabled": true,
@@ -50,42 +47,6 @@
         "name": "EuroSys",
         "group": "systems",
         "dblp_toc_patterns": ["db/conf/eurosys/eurosys{year}.bht"]
-      },
-      {
-        "id": "sosp",
-        "name": "SOSP",
-        "group": "systems",
-        "dblp_toc_patterns": ["db/conf/sosp/sosp{year}.bht"]
-      },
-      {
-        "id": "osdi",
-        "name": "OSDI",
-        "group": "systems",
-        "dblp_toc_patterns": ["db/conf/osdi/osdi{year}.bht"]
-      },
-      {
-        "id": "nsdi",
-        "name": "NSDI",
-        "group": "systems",
-        "dblp_toc_patterns": ["db/conf/nsdi/nsdi{year}.bht"]
-      },
-      {
-        "id": "sigcomm",
-        "name": "SIGCOMM",
-        "group": "systems",
-        "dblp_toc_patterns": ["db/conf/sigcomm/sigcomm{year}.bht"]
-      },
-      {
-        "id": "usenix_atc",
-        "name": "USENIX ATC",
-        "group": "systems",
-        "dblp_toc_patterns": ["db/conf/usenix/usenix{year}.bht"]
-      },
-      {
-        "id": "fast",
-        "name": "FAST",
-        "group": "systems",
-        "dblp_toc_patterns": ["db/conf/fast/fast{year}.bht"]
       }
     ]
   },

@@ -32,7 +32,8 @@ ARXIV_NS = {"atom": "http://www.w3.org/2005/Atom", "arxiv": "http://arxiv.org/sc
 DEFAULT_CONFIG = Path("config/interests.json")
 DEFAULT_OUTPUT = Path("web/data/papers.json")
 RETAINED_MATCH_LEVELS = {"high", "medium"}
-DEFAULT_MAX_STORED_PAPERS = 800
+DEFAULT_MAX_NEW_PAPERS = 50
+DEFAULT_MAX_STORED_PAPERS = 50
 DEFAULT_MAX_DATA_BYTES = 8 * 1024 * 1024
 DEFAULT_RECENT_HISTORY_DAYS = 45
 TRANSIENT_HTTP_CODES = {429, 500, 502, 503, 504}
@@ -1131,16 +1132,60 @@ def score_paper(topic: Topic, paper: dict[str, Any]) -> dict[str, Any]:
     }
 
 
+def env_float(name: str, default: float) -> float:
+    value = os.getenv(name)
+    if value is None or not value.strip():
+        return default
+    try:
+        return float(value)
+    except ValueError:
+        return default
+
+
+def has_meaningful_summary(paper: dict[str, Any], min_chars: int = 80) -> bool:
+    summary = normalize_space(str(paper.get("summary") or ""))
+    return len(summary) >= min_chars
+
+
+def is_relevant_enough(paper: dict[str, Any], best_match: dict[str, Any]) -> bool:
+    if best_match.get("keyword_hits"):
+        return True
+
+    score = float(best_match.get("score") or 0.0)
+    if paper.get("source_type") == "conference":
+        return score >= env_float("MIN_CONFERENCE_SCORE", 0.18)
+    if not has_meaningful_summary(paper):
+        return score >= env_float("MIN_TITLE_ONLY_SCORE", 0.18)
+    return score >= env_float("MIN_PAPER_SCORE", 0.08)
+
+
+def should_summarize_paper_with_llm(paper: dict[str, Any]) -> bool:
+    if paper.get("source_type") == "conference" and not env_flag("LLM_SUMMARIZE_CONFERENCE", False):
+        return False
+    if not has_meaningful_summary(paper) and not env_flag("LLM_SUMMARIZE_TITLE_ONLY", False):
+        return False
+    return True
+
+
 def fallback_summary(paper: dict[str, Any], best_match: dict[str, Any]) -> dict[str, str]:
     abstract = paper.get("summary", "")
     first_sentence = re.split(r"(?<=[.!?])\s+", abstract)[0] if abstract else ""
     if paper.get("source_type") == "conference":
         return {
-            "problem": "会议源当前只提供题录信息，未抓取论文摘要。",
-            "method": first_sentence[:300] if first_sentence else "请打开论文链接查看方法细节。",
-            "innovation": "需要接入模型 API 或阅读全文后提取更精确的创新点。",
+            "problem": "DBLP 只提供题录，当前不对会议论文做自动摘要。",
+            "method": "请打开论文链接查看方法和系统设计细节。",
+            "innovation": "仅凭标题无法可靠判断创新点，已避免占用 LLM 翻译额度。",
             "evidence": "题录信息来自会议索引，技术细节需要在原文中核验。",
             "limitations": "DBLP 通常不提供摘要；部分 DOI 或出版社页面可能有访问限制。",
+            "why_relevant": best_match.get("reason", "与配置方向存在文本匹配。"),
+        }
+    if not has_meaningful_summary(paper):
+        return {
+            "problem": "来源没有提供足够摘要，当前不调用模型做标题猜测。",
+            "method": "请打开论文链接查看方法细节。",
+            "innovation": "标题信息不足，无法可靠提取创新点。",
+            "evidence": "证据不足，需要阅读全文核验。",
+            "limitations": "缺少摘要会降低自动相关性和中文总结质量。",
             "why_relevant": best_match.get("reason", "与配置方向存在文本匹配。"),
         }
     return {
@@ -1373,7 +1418,10 @@ def merge_with_retained_papers(
             and seen_at
             and (now.date() - seen_at.date()).days <= recent_history_days
         )
-        is_active_conference = should_retain_conference_paper(paper, active_conference_years_by_source)
+        is_active_conference = (
+            should_retain_conference_paper(paper, active_conference_years_by_source)
+            and is_relevant_enough(paper, paper.get("best_match") or {})
+        )
         if paper.get("source_type") == "conference" and active_conference_years_by_source is not None and not is_active_conference:
             dropped_low += 1
             continue
@@ -1466,10 +1514,12 @@ def collect(
     days: int,
     max_per_topic: int,
     max_summaries: int,
+    max_new_papers: int,
     max_stored_papers: int,
     max_data_bytes: int,
     incremental_since_last_run: bool,
     recent_history_days: int,
+    clear_cache: bool,
 ) -> dict[str, Any]:
     default_config = load_json(config_path)
     config = load_issue_config(default_config)
@@ -1478,7 +1528,7 @@ def collect(
     now = dt.datetime.now(dt.timezone.utc)
     conference_sources = parse_conference_sources(config, now)
     active_conference_years_by_source = active_conference_years(conference_sources)
-    existing_payload = load_existing_payload(output_path)
+    existing_payload = {} if clear_cache else load_existing_payload(output_path)
     cached_conference_years_by_source = cached_conference_years(existing_payload)
     cutoff, collection_mode = collection_cutoff(existing_payload, now, days, incremental_since_last_run)
     all_candidates = []
@@ -1609,6 +1659,7 @@ def collect(
             return existing
 
     recent_papers = []
+    filtered_low_relevance = 0
     for paper in dedupe_papers(all_candidates):
         is_conference_paper = paper.get("source_type") == "conference"
         published = paper.get("published") or paper.get("updated")
@@ -1617,16 +1668,22 @@ def collect(
             matches = [score_paper(topic, paper) for topic in topics]
             matches.sort(key=lambda item: item["score"], reverse=True)
             best_match = matches[0]
-            if best_match["score"] <= 0:
+            if not is_relevant_enough(paper, best_match):
+                filtered_low_relevance += 1
                 continue
             paper["matches"] = matches
             paper["best_match"] = best_match
             recent_papers.append(paper)
 
     recent_papers.sort(key=lambda p: (p["best_match"]["score"], p.get("published", "")), reverse=True)
+    candidate_paper_count = len(recent_papers)
+    if max_new_papers > 0:
+        recent_papers = recent_papers[:max_new_papers]
     summaries_by_id: dict[str, tuple[dict[str, str], dict[str, Any]]] = {}
     llm_jobs = []
     for paper in recent_papers[:max_summaries]:
+        if not should_summarize_paper_with_llm(paper):
+            continue
         best_topic = next(topic for topic in topics if topic.id == paper["best_match"]["topic_id"])
         llm_jobs.append((best_topic, paper))
 
@@ -1668,10 +1725,13 @@ def collect(
         "stats": {
             "paper_count": len(merged_papers),
             "new_paper_count": len(recent_papers),
+            "candidate_paper_count": candidate_paper_count,
+            "filtered_low_relevance_count": filtered_low_relevance,
             "days": days,
             "collection_mode": collection_mode,
             "collection_cutoff_iso": cutoff.isoformat(),
             "max_per_topic": max_per_topic,
+            "max_new_papers": max_new_papers,
             "sources": [source.__dict__ for source in sources],
             "conference_sources": [source.__dict__ for source in conference_sources],
             "source_stats": source_stats,
@@ -1684,6 +1744,7 @@ def collect(
             "failed_conference_fetches": failed_conference_fetches,
             "skipped_cached_conference_years": skipped_cached_conference_years,
             "conference_source_count": len(conference_sources),
+            "clear_cache": clear_cache,
             **retention_stats,
         },
     }
@@ -1704,10 +1765,12 @@ def main() -> None:
     parser.add_argument("--days", type=int, default=int(os.getenv("LOOKBACK_DAYS", "7")))
     parser.add_argument("--max-per-topic", type=int, default=int(os.getenv("MAX_PER_TOPIC", "25")))
     parser.add_argument("--max-summaries", type=int, default=int(os.getenv("MAX_SUMMARIES", "40")))
+    parser.add_argument("--max-new-papers", type=int, default=int(os.getenv("MAX_NEW_PAPERS", str(DEFAULT_MAX_NEW_PAPERS))))
     parser.add_argument("--max-stored-papers", type=int, default=int(os.getenv("MAX_STORED_PAPERS", str(DEFAULT_MAX_STORED_PAPERS))))
     parser.add_argument("--max-data-bytes", type=int, default=int(os.getenv("MAX_DATA_BYTES", str(DEFAULT_MAX_DATA_BYTES))))
     parser.add_argument("--incremental-since-last-run", action="store_true", default=env_flag("INCREMENTAL_SINCE_LAST_RUN"))
     parser.add_argument("--recent-history-days", type=int, default=int(os.getenv("RECENT_HISTORY_DAYS", str(DEFAULT_RECENT_HISTORY_DAYS))))
+    parser.add_argument("--clear-cache", action="store_true", default=env_flag("CLEAR_PAPER_CACHE"))
     args = parser.parse_args()
     payload = collect(
         args.config,
@@ -1715,10 +1778,12 @@ def main() -> None:
         args.days,
         args.max_per_topic,
         args.max_summaries,
+        args.max_new_papers,
         args.max_stored_papers,
         args.max_data_bytes,
         args.incremental_since_last_run,
         args.recent_history_days,
+        args.clear_cache,
     )
     print(f"Wrote {len(payload['papers'])} papers to {args.output}")
 

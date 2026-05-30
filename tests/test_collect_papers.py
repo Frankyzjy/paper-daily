@@ -11,6 +11,7 @@ from scripts.collect_papers import (
     collection_cutoff,
     default_conference_years,
     fetch_arxiv,
+    is_relevant_enough,
     is_retryable_dblp_error,
     is_retryable_arxiv_error,
     merge_with_retained_papers,
@@ -21,6 +22,7 @@ from scripts.collect_papers import (
     parse_dblp_hits,
     parse_sources,
     should_retry_arxiv_error,
+    should_summarize_paper_with_llm,
     source_request_headers,
     SourceConfig,
     Topic,
@@ -54,6 +56,11 @@ class RetentionTest(unittest.TestCase):
         os.environ.pop("ARXIV_RETRY_THROTTLED", None)
         os.environ.pop("CUSTOM_FEED_HEADERS", None)
         os.environ.pop("CUSTOM_FEED_BEARER_TOKEN", None)
+        os.environ.pop("LLM_SUMMARIZE_CONFERENCE", None)
+        os.environ.pop("LLM_SUMMARIZE_TITLE_ONLY", None)
+        os.environ.pop("MIN_CONFERENCE_SCORE", None)
+        os.environ.pop("MIN_TITLE_ONLY_SCORE", None)
+        os.environ.pop("MIN_PAPER_SCORE", None)
 
     def test_arxiv_retry_wait_uses_retry_after_header(self) -> None:
         os.environ["ARXIV_RETRY_MIN_SECONDS"] = "30"
@@ -186,6 +193,33 @@ class RetentionTest(unittest.TestCase):
         abstract = openalex_abstract_text({"abstract_inverted_index": {"hello": [0], "world": [1]}})
 
         self.assertEqual(abstract, "hello world")
+
+    def test_relevance_filter_rejects_weak_title_only_and_conference_matches(self) -> None:
+        weak_title = {"title": "A Generic Optimization Study", "summary": ""}
+        weak_conference = {
+            "title": "A Generic Conference Paper",
+            "summary": "DBLP 题录：ASPLOS 2026 会议论文。",
+            "source_type": "conference",
+        }
+        keyword_match = {
+            "title": "KV cache compression for LLM serving",
+            "summary": "",
+            "source_type": "conference",
+        }
+
+        self.assertFalse(is_relevant_enough(weak_title, {"score": 0.03, "keyword_hits": []}))
+        self.assertFalse(is_relevant_enough(weak_conference, {"score": 0.05, "keyword_hits": []}))
+        self.assertTrue(is_relevant_enough(keyword_match, {"score": 0.04, "keyword_hits": ["KV cache compression"]}))
+
+    def test_llm_summary_skips_conference_and_title_only_by_default(self) -> None:
+        self.assertFalse(should_summarize_paper_with_llm({"source_type": "conference", "summary": "DBLP 题录。"}))
+        self.assertFalse(should_summarize_paper_with_llm({"source": "Crossref", "summary": ""}))
+        self.assertTrue(should_summarize_paper_with_llm({"source": "arXiv", "summary": "x" * 100}))
+
+        os.environ["LLM_SUMMARIZE_CONFERENCE"] = "true"
+        os.environ["LLM_SUMMARIZE_TITLE_ONLY"] = "true"
+        self.assertTrue(should_summarize_paper_with_llm({"source_type": "conference", "summary": "DBLP 题录。"}))
+        self.assertTrue(should_summarize_paper_with_llm({"source": "Crossref", "summary": ""}))
 
     def test_merge_retains_previous_high_medium_and_recent_low(self) -> None:
         now = dt.datetime(2026, 5, 28, tzinfo=dt.timezone.utc)
