@@ -67,79 +67,158 @@ assignees: ''
     ]
   },
   "topics": [
-    {
-      "id": "llm_low_precision_quantization",
-      "name": "大模型低精度量化",
-      "description": "关注大语言模型低比特量化、混合精度、量化感知训练、后训练量化、权重量化、激活量化、KV cache 量化以及量化对推理性能和精度的影响。",
-      "keywords": [
-        "large language model quantization",
-        "LLM quantization",
-        "low-bit quantization",
-        "post-training quantization",
-        "weight-only quantization",
-        "activation quantization",
-        "mixed precision",
-        "FP8",
-        "INT4",
-        "INT8",
-        "KV cache quantization"
-      ],
-      "arxiv_categories": ["cs.CL", "cs.LG", "cs.AI", "cs.DC"]
-    },
-    {
-      "id": "tensor_compute_unit_architecture",
-      "name": "张量计算单元结构",
-      "description": "关注 GPU/NPU/TPU 张量计算单元、矩阵乘加阵列、数据流架构、片上存储层次、低精度张量核、AI 加速器微架构和算子映射。",
-      "keywords": [
-        "tensor processing unit",
-        "tensor core",
-        "matrix multiply unit",
-        "systolic array",
-        "AI accelerator architecture",
-        "NPU architecture",
-        "GPU tensor core",
-        "low precision tensor compute",
-        "dataflow architecture",
-        "on-chip memory hierarchy"
-      ],
-      "arxiv_categories": ["cs.AR", "cs.DC", "cs.LG", "cs.PF"]
-    },
-    {
-      "id": "llm_inference_cluster_communication",
-      "name": "大模型推理集群通信优化",
-      "description": "关注分布式大模型推理、prefill/decode 分离、张量并行、流水并行、专家并行、跨节点通信、调度、负载均衡和 serving 系统吞吐延迟优化。",
-      "keywords": [
-        "LLM inference serving",
-        "distributed inference",
-        "inference cluster",
-        "tensor parallelism",
-        "pipeline parallelism",
-        "expert parallelism",
-        "all-reduce",
-        "collective communication",
-        "prefill decode disaggregation",
-        "serving scheduler"
-      ],
-      "arxiv_categories": ["cs.DC", "cs.PF", "cs.CL", "cs.LG"]
-    },
-    {
-      "id": "kvcache_compression_storage_scheduling",
-      "name": "KV cache 压缩与存储调度",
-      "description": "关注大模型推理中的 KV cache 压缩、淘汰、分页、卸载、预取、层级存储、显存管理和长上下文推理效率优化。",
-      "keywords": [
-        "KV cache compression",
-        "KV cache eviction",
-        "KV cache scheduling",
-        "paged attention",
-        "attention cache",
-        "long context inference",
-        "memory offloading",
-        "GPU memory management",
-        "cache prefetching",
-        "LLM serving memory"
-      ],
-      "arxiv_categories": ["cs.CL", "cs.LG", "cs.DC", "cs.PF"]
-    }
-  ]
+  {
+    "id": "environmental_microbiology_metagenomics",
+    "name": "Environmental Microbiology and Metagenomics",
+    "description": "Focus on environmental microbiology, microbial ecology, microbiomes, shotgun metagenomics, metagenome-assembled genomes (MAGs), microbial interactions, and genome-resolved analyses in natural and engineered environments.",
+    "keywords": [
+      "environmental microbiology",
+      "microbial ecology",
+      "environmental microbiome",
+      "metagenomics",
+      "shotgun metagenomics",
+      "genome-resolved metagenomics",
+      "metagenome assembled genomes",
+      "MAGs",
+      "microbial community",
+      "functional annotation",
+      "comparative genomics",
+      "population genomics",
+      "microbial diversity",
+      "microbial evolution"
+    ],
+    "arxiv_categories": [
+      "q-bio.GN",
+      "q-bio.QM"
+    ]
+  },
+
+  {
+    "id": "water_quality_aquatic_ecosystems",
+    "name": "Water Quality and Aquatic Ecosystems",
+    "description": "Focus on freshwater ecosystems, river and watershed processes, aquatic ecology, water pollution, water quality assessment, and microbial dynamics in aquatic environments.",
+    "keywords": [
+      "water quality",
+      "freshwater ecology",
+      "river ecosystem",
+      "aquatic ecosystem",
+      "watershed",
+      "watershed management",
+      "surface water",
+      "river microbiome",
+      "aquatic microbiology",
+      "water pollution",
+      "ecological assessment",
+      "river restoration",
+      "environmental monitoring"
+    ],
+    "arxiv_categories": [
+      "q-bio.PE",
+      "q-bio.QM"
+    ]
+  },
+
+  {
+    "id": "environmental_health_one_health",
+    "name": "Environmental Health and One Health",
+    "description": "Focus on environmental health, One Health approaches, pathogen surveillance, microbial risk assessment, human exposure pathways, and public health implications of environmental contaminants and microorganisms.",
+    "keywords": [
+      "One Health",
+      "environmental health",
+      "public health",
+      "health risk assessment",
+      "microbial risk assessment",
+      "pathogen surveillance",
+      "waterborne pathogens",
+      "human exposure",
+      "environmental epidemiology",
+      "disease transmission",
+      "environmental pathogens",
+      "zoonotic pathogens"
+    ],
+    "arxiv_categories": [
+      "q-bio.QM",
+      "q-bio.PE"
+    ]
+  },
+
+  {
+    "id": "emerging_contaminants_wastewater_treatment",
+    "name": "Emerging Contaminants and Wastewater Treatment",
+    "description": "Focus on wastewater treatment technologies, advanced oxidation processes, emerging contaminants, pharmaceuticals, PFAS, resource recovery, and sustainable water treatment systems.",
+    "keywords": [
+      "wastewater treatment",
+      "water treatment",
+      "advanced oxidation process",
+      "AOP",
+      "selective oxidation",
+      "emerging contaminants",
+      "contaminants of emerging concern",
+      "PFAS",
+      "pharmaceuticals",
+      "micropollutants",
+      "resource recovery",
+      "membrane technology",
+      "wastewater reuse",
+      "industrial wastewater"
+    ],
+    "arxiv_categories": [
+      "physics.chem-ph"
+    ]
+  },
+
+  {
+    "id": "environmental_antimicrobial_resistance",
+    "name": "Environmental Antimicrobial Resistance",
+    "description": "Focus on antibiotic resistance genes, environmental resistomes, antimicrobial resistance dissemination, mobile genetic elements, horizontal gene transfer, and resistance risks in environmental systems.",
+    "keywords": [
+      "antibiotic resistance genes",
+      "ARGs",
+      "antimicrobial resistance",
+      "AMR",
+      "environmental resistome",
+      "resistome",
+      "mobile genetic elements",
+      "plasmids",
+      "horizontal gene transfer",
+      "integrons",
+      "environmental AMR",
+      "multidrug resistance",
+      "resistance dissemination",
+      "Acinetobacter"
+    ],
+    "arxiv_categories": [
+      "q-bio.GN",
+      "q-bio.MN"
+    ]
+  },
+
+  {
+    "id": "global_change_water_resources",
+    "name": "Global Change and Water Resources",
+    "description": "Focus on climate change impacts on water systems, hydrology, ecohydrology, watershed processes, water security, droughts, floods, and interactions between global environmental change and aquatic ecosystems.",
+    "keywords": [
+      "global change",
+      "climate change",
+      "hydrology",
+      "ecohydrology",
+      "water resources",
+      "water security",
+      "watershed processes",
+      "drought",
+      "flood",
+      "extreme weather",
+      "climate adaptation",
+      "river basin",
+      "land use change",
+      "ecosystem resilience"
+    ],
+    "arxiv_categories": [
+      "physics.geo-ph",
+      "q-bio.PE"
+    ]
+  }
+]
 }
+```
 ```
